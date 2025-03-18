@@ -1,0 +1,258 @@
+.header {
+  position: fixed absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  padding: 10px 0px;
+  background-color: #278d68da;
+  color: #fff;
+  font-size: 22px;
+  box-shadow: 0px 10px 5px rgba(6, 70, 92, 0.213);
+}
+
+body {
+  margin: 0;
+  background-color: #e9f3e7;
+  font-size: 12px;
+  color: #413e3d;
+  font-weight: bold;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.btn {
+  font-size: 15px;
+  margin-left: 30px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.selectLevel {
+  height: 100%;
+}
+
+.textSelect {
+  margin-top: 140px;
+}
+
+.btnEasy {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+  color: #fff;
+  border: solid #56691e 2px;
+  background-color: #1b8b69;
+  &:hover {
+    color: #46462b;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.btnNormal {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+  color: #fff;
+  border: solid #56691e 2px;
+  background-color: #1b8b69;
+  &:hover {
+    color: #46462b;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.btnHard {
+  margin-top: 50px;
+  margin-left: 0px;
+  color: #fff;
+  border: solid #56691e 2px;
+  background-color: #1b8b69;
+  &:hover {
+    color: #46462b;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.btnBack {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnGoToHome {
+  margin-left: 0px;
+  color: #fff;
+  border: solid #817f7f 2px;
+  background-color: #24562c;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.rule {
+  display: none;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  background: #a1b9b169;
+  color: black;
+  font-weight: bold;
+}
+.rule:after {
+  position: absolute;
+  left: 41%;
+  bottom: -19px;
+  margin-left: 10px;
+  border: solid transparent;
+  border-color: rgba(51, 204, 153, 0);
+  border-top-color: #a1b9b169;
+  border-width: 10px;
+  pointer-events: none;
+  content: " ";
+}
+
+.ruleEasy {
+  top: 250px;
+}
+.ruleNormal {
+  top: 390px;
+}
+.ruleHard {
+  top: 527px;
+}
+
+.btnEasy:hover + .ruleEasy {
+  display: block;
+}
+.btnNormal:hover + .ruleNormal {
+  display: block;
+}
+.btnHard:hover + .ruleHard {
+  display: block;
+}
+
+.square {
+  height: 40px;
+  width: 40px;
+  border: solid 0.5px rgba(128, 128, 128, 0.533);
+  font-size: 20px;
+}
+
+.open {
+  background-color: #fff;
+  pointer-events: none;
+}
+.close {
+  background-color: #536050;
+}
+
+.board {
+  position: relative;
+  top: 30px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  border: 5px solid rgb(55, 51, 51);
+}
+
+.easy {
+  width: 360px;
+  height: 360px;
+  grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+  grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+}
+
+.normal {
+  width: 640px;
+  height: 640px;
+  grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+  grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+}
+
+.hard {
+  width: 1200px;
+  height: 640px;
+  grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+  grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+}
+
+.flgAndtime {
+  position: relative;
+  top: 60px;
+  display: flex;
+}
+
+.flg {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.time {
+  position: relative;
+  width: 50%;
+  display: flex;
+}
+
+.iconTime {
+  margin-left: 70px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.btnPlay {
+  color: #000;
+  border: solid #3f3f37 2px;
+  background-color: #effff8;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.btnFlg {
+  color: #fff;
+  border: solid #817f7f 2px;
+  background-color: #313732;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.gameover {
+  position: relative;
+  width: 100%;
+  top: -360px;
+  color: black;
+  text-shadow: rgb(144, 34, 195) 1px 5px 20px;
+  font-size: 45px;
+}
+
+.gameclear {
+  position: relative;
+  width: 100%;
+  top: -360px;
+  color: white;
+  text-shadow: rgb(166, 195, 34) 1px 5px 20px;
+  font-size: 45px;
+}
+
+.gameEasy {
+  top: 160px;
+}
